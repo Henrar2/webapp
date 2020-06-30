@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AppNav from './AppNav';
 import { Container,} from 'reactstrap';
 import AddEmployee from './AddEmployee';
 import GetEmployee from './GetEmployee';
@@ -21,7 +20,6 @@ class Employee extends Component {
         return( 
          <div>
 
-                <AppNav/>
                 <Container>
                 {titleGet}
                 </Container> 

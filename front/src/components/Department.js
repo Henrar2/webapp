@@ -14,7 +14,6 @@ class Department extends Component {
         const titleAdd=<h1 style={{textalign:"center"}}>Προσθήκη Νέου Τμήματος</h1>       
         return(    
             <div>
-                <AppNav/>
                 <Container>
                 {titleGet}
                 </Container>

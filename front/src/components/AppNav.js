@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import {Nav,Navbar,NavItem,NavbarBrand,NavLink} from 'reactstrap'
+import {Nav,Navbar,NavItem,NavbarBrand} from 'reactstrap'
+import { HashRouter,NavLink } from 'react-router-dom';
 
 class AppNav extends Component {
     state = {  }
     render() { 
         return ( 
         <div>
+            <div>
+            <HashRouter>
             <Navbar color="dark" dark expand="md">
               <NavbarBrand href="/">Web Application</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/">Home</NavLink>
+                            <NavLink to="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/Department">Departments</NavLink>
+                            <NavLink to="/Department">Departments</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/Employee">Employees</NavLink>
+                            <NavLink to="/Employee">Employees</NavLink>
                         </NavItem>
-                    </Nav>
+                    </Nav>   
             </Navbar>
-          </div> );
+            </HashRouter>
+            </div>
+          </div> 
+);
     }
 }
  

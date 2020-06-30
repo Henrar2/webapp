@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css'
+import Home from './components/Home'
 import App from './components/App'
-
 ReactDOM.render(<App/>,document.getElementById('root')
 );
 
